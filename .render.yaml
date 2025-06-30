@@ -2,5 +2,5 @@ services:
   - type: web
     name: fastapi-app
     env: python
-    buildCommand: poetry install
-    startCommand: poetry run uvicorn main:app --host 0.0.0.0 --port $PORT
+    buildCommand: "/opt/render/project/poetry/bin/poetry install"
+    startCommand: "/opt/render/project/poetry/bin/poetry run uvicorn main:app --host 0.0.0.0 --port $PORT"
